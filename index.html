@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineering Lab</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #111827;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .button-box {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #111827;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AI Engineering Lab</h1>
+    <p>
+      A personal learning hub for AI engineering, React, JavaScript, APIs,
+      automation, and practical coding projects.
+    </p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Learning Areas</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>AI Engineering</h3>
+        <p>
+          Practice projects focused on AI tools, prompts, automation,
+          and intelligent workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>React</h3>
+        <p>
+          Building reusable components, interactive interfaces,
+          and frontend applications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>
+          Learning DOM manipulation, functions, events, validation,
+          and dynamic web features.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>APIs</h3>
+        <p>
+          Connecting frontend pages with backend services and working
+          with structured data.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Automation</h3>
+        <p>
+          Creating small tools and scripts to automate repetitive tasks
+          and improve workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Frontend Practice</h3>
+        <p>
+          HTML, CSS, responsive layouts, forms, tables, dashboards,
+          and UI practice tasks.
+        </p>
+      </div>
+    </div>
+
+    <div class="button-box">
+      <button onclick="showMessage()">Start Learning</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created by Fuad Aliyev | AI Engineering Lab</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Welcome to AI Engineering Lab!");
+    }
+  </script>
+
+</body>
+</html>
